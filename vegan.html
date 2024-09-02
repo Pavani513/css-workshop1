@@ -13,21 +13,35 @@
         body {
             overflow-x: hidden;
         }
+        .nav .but:hover{
+            transform: scale(1.2,1.2);
+            cursor: pointer !important;
+        }
+        .card .fa:hover{
+            transform: scale(1.2,1.2);
+        }
+        .icon .fa:hover{
+            transform: scale(1.2,1.2);
+        } 
+        #sub:hover{
+            background-color: white !important;
+            color:rgba(220, 20, 60, 0.582) !important;
+            cursor: pointer;
+        } 
     </style>
 </head>
 <body>
     <div
         style="background-color:white; padding: 15px; position: fixed; width: 100%; top: 0; left: 0; z-index: 1000;">
+        <img src="./tree.jpg" alt="" width="48px">
         <div class="nav" style="float: right;">
-            <a href="" style="margin-right: 15px; color: black;text-decoration: none;">Demo Page</a>
+            <a href="" style="margin-right: 15px; color: black;text-decoration: none;">Demo Page <i class="fa fa-caret-down" style="font-size:24px" ::before></i></a>
             <a href="" style="margin-right: 15px; color: black; text-decoration: none;">Watch Videos</a>
-            <a href="" style="margin-right: 15px; color: black;text-decoration: none;">Blocks</a>
-            <button type="button"
+            <a href="" style="margin-right: 15px; color: black;text-decoration: none;">Blocks<i class="fa fa-caret-down" style="font-size:24px" ::before></i></a>
+            <button class="but"
                 style="padding: 10px 30px;margin-right: 50px;background-color:rgba(170, 210, 54);color: white; border-radius: 5px;">Buy
                 Now</button>
         </div>
-        <img src="./tree.jpg" alt="" width="48px">
-    </div>
     </div>
     <div
         style="background-image: url(./veg.jpg); width:1510px ; height: 860px;background-repeat: no-repeat;background-size: cover;opacity:0.6;">
@@ -58,20 +72,20 @@
                 during cleaning.</h3>
         </div>
         <div class="card" style="background-color: indianred; color: white;padding: 50px 70px 100px 70px;">
-            <i class='fas fa-smile-beam' style='font-size:60px;color:white'></i>
+            <i class='fa fa-smile-beam' style='font-size:60px;color:white'></i>
             <h1>Step 01.</h1>
             <h3>If you sometimes eat hot chilli peppers, this will help normalize cerebral circulation,ease the
                 condition with brancial asthama cough,sore throat,flu.</h3>
         </div>
     </div>
-    <div class="pichi" style="background-color:burlywood; text-align: center;padding: 100px 0px;">
+    <div style="background-color:burlywood; text-align: center;padding: 100px 0px;">
         <h3 style="font-style: oblique; color:darkolivegreen; font-size: 20px;">Fresh Food</h3>
         <h1 style="font-size: 50px;">Our Vegan Store!</h1>
         <h3 style="color:rgba(0, 0, 128, 0.519);">Radish contain alot of fiber,pectin and mineral salts.</h3><br><br>
-        <div style="display: flex; justify-content: space-evenly;padding: 0px 40px;">
+        <div class="icon" style="display: flex; justify-content: space-evenly;padding: 0px 40px;">
             <i class="fa fa-camera"
                 style="font-size:48px;color:white; background-color: chocolate; border-radius: 100%; padding: 40px; "></i>
-            <i class='fas fa-rocket'
+            <i class='fa fa-rocket'
                 style='font-size:48px;color:white; background-color: chocolate; border-radius: 100%;padding: 40px; '></i>
             <i class="fa fa-twitter"
                 style="font-size:48px;color:white; background-color: chocolate; border-radius: 100%; padding: 40px;"></i>
@@ -98,10 +112,10 @@
         <h1 style="font-size: 50px;">Our Vegan Shop!</h1>
         <h3 style="color:black">According to experts, any habit can be formed in 21 days. The same statement applies to
             healthy eating.</h3>
-        <div style="display: flex; gap: 30px; margin: 30px;">
+        <div class="pic"  style="display: flex; gap: 30px; margin: 30px;">
             <div style="background-color: white; border-radius:40px 0px 40px 40px; padding:0px 30px;">
                 <section class="one"><img src="./veronica.jpg" alt=""
-                        style="border-radius: 100%; width: 100px; padding: 30px 40px;">
+                    style="border-radius: 100%; width: 100px;padding-top: 50px; ">
                     <p>Sales consultants are very polite. Many of the products have tried and are ready to prompt and
                         recommend to customers. The staff shows that they completely share the philosophy of proper
                         nutrition, if you can say so.</p>
@@ -110,7 +124,7 @@
                 </section>
             </div>
             <div style="background-color: white; border-radius: 40px 0px 40px 40px; padding: 50px;">
-                <section class="two"><img src="./jim.jpg" alt="" style="border-radius: 100%;width: 100px;">
+                <section class="one"><img src="./jim.jpg" alt="" style="border-radius: 100%;width: 100px;">
                     <p>The assortment is very wide. From useful organic oils, cereals and teas to specific products for
                         vegetarians, such as sausages and pies without meat.</p>
                     <h2>JIM CASH</h2>
@@ -118,7 +132,7 @@
                 </section>
             </div>
             <div style="background-color: white; border-radius: 40px 0px 40px 40px; padding: 30px;">
-                <section class="there"><img src="./peter.jpg" alt="" style="border-radius: 100%; width: 100px;">
+                <section class="one"><img src="./peter.jpg" alt="" style="border-radius: 100%; width: 100px;">
                     <p>I want to say a huge thank you to the management of the store and all its employees, I'm not a
                         vegetarian, it would seem that the store is not for me, but it's not so, any person who comes
                         here will find something useful.</p>
@@ -147,7 +161,7 @@
                 <input type="Email" value="Your Email" placeholder="Email"
                     style="padding:10px 250px 10px 10px; font-size: 15px; color: rgba(0, 0, 0, 0.607);">
                 <br><br><br>
-                <button type="button"
+                <button id="sub" type="button"
                     style="padding: 10px; font-size: 25px; font-family:'Courier New'; font-weight: bold; background-color:rgba(220, 20, 60, 0.582); color: rgba(255, 255, 255, 0.697);">
                     SUBSCRIBE
                 </button>
@@ -205,7 +219,8 @@
             <input style="padding: 10px 100px 10px 10px; border-radius: 5px;" type="text" placeholder="Phone"><br><br>
             <input style="padding: 10px 100px 10px 10px;border-radius: 5px;" type="text" placeholder="Subject"><br><br>
             <input style="padding: 10px 100px 10px 10px;border-radius: 5px;" type="email" placeholder="Email"><br><br>
-            <textarea style="padding: 10px 100px 10px 10px;border-radius: 5px;"name="Message" placeholder="Message"></textarea><br><br>
+            <textarea style="padding: 10px 100px 10px 10px;border-radius: 5px;" name="Message"
+                placeholder="Message"></textarea><br><br>
             <button
                 style="padding: 20px; background-color:rgba(170, 210, 54); border-radius: 10px; color:white; font-size: 15px;font-weight:bold ;"
                 type="submit">Submit Now</button>
